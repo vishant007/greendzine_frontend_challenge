@@ -1,0 +1,85 @@
+/* UserList.css */
+
+.user-list-container {
+	padding: 20px;
+}
+.logo-container {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+}
+/* UserList.css */
+
+.search-bar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+.search-input {
+	width: 30%;
+	padding: 10px;
+	border: 1px solid #ddd;
+	background: #5e5e5e82 0% 0% no-repeat padding-box;
+	color: white;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-icon {
+	position: relative;
+	right: 30px;
+	cursor: pointer;
+}
+
+/* Optional: You can style the search icon further if needed */
+.search-icon svg {
+	fill: white; /* Change the color as needed */
+	width: 20px;
+	height: 20px;
+}
+
+.user-cards-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.user-card {
+	font: normal normal bold 16px/21px Mulish;
+	width: 48%; /* Adjust the width as needed */
+	margin-bottom: 20px;
+	padding: 10px;
+	color: white;
+	border-radius: 8px;
+	background: #1a2c2c99 0% 0% no-repeat padding-box;
+	mix-blend-mode: normal;
+	opacity: 1;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+p {
+	opacity: 0.6;
+}
+
+.user-card:nth-child(odd) {
+	margin-right: auto;
+	margin-left: 0;
+}
+
+.user-card:nth-child(even) {
+	margin-right: 0;
+	margin-left: auto;
+}
+
+@media only screen and (max-width: 768px) {
+	.user-card {
+		width: 60%;
+		margin-right: 0;
+		margin-left: 0;
+	}
+	.search-input {
+		width: 60%;
+	}
+}
