@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import logo from '../Assets/moptro.png';
+
 import UserLogo from '../Assets/User.png';
 import './UserList.css';
+import { FaHome, FaUsers } from 'react-icons/fa';
 
 const UserList = () => {
 	const navigate = useNavigate();
@@ -18,8 +21,14 @@ const UserList = () => {
 	const redirectToUserList = () => {
 		navigate('/user-list');
 	};
+	const redirectToDashboard = () => {
+		navigate('/dashboard');
+	};
 	return (
 		<div className='user-list-container'>
+			<div className='dashboard-header'>
+				<img src={logo} alt='logo'></img>
+			</div>
 			<div className='logo-container' onClick={redirectToUserList}>
 				<img src={UserLogo} alt='user-logo' />
 			</div>
@@ -56,6 +65,10 @@ const UserList = () => {
 						<p>Role: {user.role}</p>
 					</div>
 				))}
+			</div>
+			<div className='bottom-navigation'>
+				<FaHome onClick={redirectToDashboard} size={25} />
+				<FaUsers onClick={redirectToUserList} size={25} />
 			</div>
 		</div>
 	);

@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import './Dashboard.css';
 import logo from '../Assets/moptro.png';
 import UserLogo from '../Assets/User.png';
+import { FaHome, FaUsers } from 'react-icons/fa';
 
 const Dashboard = () => {
 	const navigate = useNavigate();
@@ -18,6 +19,9 @@ const Dashboard = () => {
 
 	const redirectToUserList = () => {
 		navigate('/user-list');
+	};
+	const redirectToDashboard = () => {
+		navigate('/dashboard');
 	};
 
 	return (
@@ -41,6 +45,10 @@ const Dashboard = () => {
 						</div>
 					</div>
 				))}
+			</div>
+			<div className='bottom-navigation'>
+				<FaHome onClick={redirectToDashboard} size={25} />
+				<FaUsers onClick={redirectToUserList} size={25} />
 			</div>
 		</div>
 	);

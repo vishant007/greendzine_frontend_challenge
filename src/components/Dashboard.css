@@ -1,3 +1,7 @@
+.main-dashboard {
+	min-height: 100vh;
+	overflow: hidden;
+}
 .dashboard {
 	position: absolute;
 
@@ -22,7 +26,7 @@
 	display: block;
 	margin: 0 auto;
 	max-width: 100%;
-	margin-top: 30px;
+	margin-top: 50px;
 }
 
 .dashboard h3 {
@@ -93,9 +97,32 @@ h5 {
 	line-height: 20px;
 	border-radius: 5px;
 }
+.bottom-navigation {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: #1a2226;
+	display: flex;
+	justify-content: space-around;
+	padding: 10px 0;
+}
 
+.bottom-navigation svg {
+	color: green;
+	cursor: pointer;
+}
+.logo-container {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+}
 /* Responsive Styles for Screens up to 600px */
 @media only screen and (max-width: 600px) {
+	.dashboard-header {
+		margin-top: 20px;
+	}
 	.dashboard {
 		margin-top: 20px;
 		width: 90%;
@@ -109,12 +136,7 @@ h5 {
 	.progress-bar {
 		width: 100%; /* Adjusted for smaller screens */
 	}
-}
-
-/* Top right corner logo */
-.logo-container {
-	position: absolute;
-	top: 10px;
-	right: 10px;
-	cursor: pointer;
+	.bottom-navigation {
+		padding: 10px;
+	}
 }

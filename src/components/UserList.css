@@ -1,7 +1,6 @@
-/* UserList.css */
-
 .user-list-container {
-	padding: 20px;
+	min-height: 100vh;
+	overflow: hidden;
 }
 .logo-container {
 	position: absolute;
@@ -9,12 +8,19 @@
 	right: 10px;
 	cursor: pointer;
 }
-/* UserList.css */
+
+.dashboard-header img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	margin-top: 70px;
+}
 
 .search-bar {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin-top: 20px;
 	margin-bottom: 20px;
 }
 
@@ -44,6 +50,8 @@
 .user-cards-container {
 	display: flex;
 	flex-direction: column;
+	padding: 10px;
+	overflow: hidden;
 }
 
 .user-card {
@@ -72,8 +80,26 @@ p {
 	margin-right: 0;
 	margin-left: auto;
 }
+.bottom-navigation {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: #1a2226;
+	display: flex;
+	justify-content: space-around;
+	padding: 10px 0;
+}
+
+.bottom-navigation svg {
+	color: green;
+	cursor: pointer;
+}
 
 @media only screen and (max-width: 768px) {
+	.user-list-container {
+		overflow: hidden;
+	}
 	.user-card {
 		width: 60%;
 		margin-right: 0;
@@ -81,5 +107,8 @@ p {
 	}
 	.search-input {
 		width: 60%;
+	}
+	.bottom-navigation {
+		padding: 10px;
 	}
 }
