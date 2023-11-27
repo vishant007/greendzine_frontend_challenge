@@ -18,7 +18,9 @@ const Login = () => {
 		<div className='login-box'>
 			<div className='login-header'>
 				<h2>Login</h2>
+
 				<img src={logo} alt='logo'></img>
+				<h4 className='login-subheader'>We Go Electric</h4>
 			</div>
 			<form>
 				<div className='user-box'>

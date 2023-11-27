@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import logo from '../Assets/moptro.png';
-
 import UserLogo from '../Assets/User.png';
 import './UserList.css';
 import { FaHome, FaUsers } from 'react-icons/fa';
 
 const UserList = () => {
 	const navigate = useNavigate();
+	const notificationCount = 5;
 	const userList = [
 		{ id: 1, name: 'John Doe', dob: '1990-05-15', role: 'Developer' },
 		{ id: 2, name: 'Jane Smith', dob: '1985-08-22', role: 'Designer' },
@@ -28,6 +28,8 @@ const UserList = () => {
 		<div className='user-list-container'>
 			<div className='user-header'>
 				<img src={logo} alt='logo'></img>
+
+				<div className='notification-badge'>{notificationCount}</div>
 			</div>
 			<div className='logo-container' onClick={redirectToUserList}>
 				<img src={UserLogo} alt='user-logo' />
@@ -61,8 +63,12 @@ const UserList = () => {
 					<div key={user.id} className='user-card'>
 						<p>Employment ID: {user.id}</p>
 						<p>Name: {user.name}</p>
-						<p>DOB: {user.dob}</p>
-						<p>Role: {user.role}</p>
+						<p>
+							DOB: <span className='user-dob-value'>{user.dob}</span>
+						</p>
+						<p>
+							Role: <span className='user-role-value'>{user.role}</span>
+						</p>
 					</div>
 				))}
 			</div>

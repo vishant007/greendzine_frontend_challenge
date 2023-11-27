@@ -16,7 +16,7 @@
 	mix-blend-mode: normal;
 	color: #fff;
 	box-sizing: border-box;
-	box-shadow: inset 0px 3px 3px #fffdfd40, 3px 3px 3px #4a494947;
+	background: #04170780 0% 0% no-repeat padding-box;
 	border-radius: 10px;
 	font: normal normal bold 18px/25px Source Sans Pro;
 	letter-spacing: 0.01px;
@@ -36,6 +36,10 @@
 	margin: 0 auto;
 	margin-bottom: 20px;
 	color: #fff;
+	font-size: medium;
+	background-color: #1a2226;
+	border-radius: 10px;
+	font: normal normal bold 18px/25px Source Sans Pro;
 }
 
 .day {
@@ -78,23 +82,25 @@ h5 {
 	max-width: 100%;
 	margin-bottom: 20px;
 	width: 90%;
-	height: 20px;
+	height: 15px;
 	background: #1a2c2c99 0% 0% no-repeat padding-box;
 	mix-blend-mode: normal;
 	opacity: 1;
 	overflow: hidden;
+	border-radius: 8px;
 }
 
 .progress {
 	height: 100%;
-	background: #36a54680 0% 0% no-repeat padding-box;
+	background: #36a546 0% 0% no-repeat padding-box;
 	mix-blend-mode: normal;
 	border: 1px solid #36a546;
-	opacity: 1;
+	opacity: 0.5;
 	color: #fff;
 	text-align: center;
 	line-height: 20px;
 	border-radius: 5px;
+	border-radius: 8px;
 }
 
 .bottom-navigation {

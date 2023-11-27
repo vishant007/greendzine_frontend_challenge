@@ -29,6 +29,14 @@ body {
 	margin-bottom: 20px;
 }
 
+.login-subheader {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: green;
+	opacity: 0.6;
+}
+
 .login-box h2 {
 	margin: 0 0 30px;
 	padding: 0;
@@ -91,18 +99,14 @@ body {
 	margin-bottom: 20px;
 	width: 238px;
 	height: 42px;
-	background: #00ff2580;
+	background: transparent
+		linear-gradient(180deg, #00ff2580 0%, #000000 100%, #36a54680 100%) 0% 0%
+		no-repeat padding-box;
 	color: #fff;
 	border: none;
 	border-radius: 5px;
 	cursor: pointer;
 	transition: background-color 0.3s ease;
-}
-
-.login-btn:hover {
-	background: transparent
-		linear-gradient(180deg, #00ff2580 0%, #000000 100%, #36a54680 100%) 0% 0%
-		no-repeat padding-box;
 }
 
 @media only screen and (max-width: 600px) {
