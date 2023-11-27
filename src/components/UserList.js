@@ -26,7 +26,7 @@ const UserList = () => {
 	};
 	return (
 		<div className='user-list-container'>
-			<div className='dashboard-header'>
+			<div className='user-header'>
 				<img src={logo} alt='logo'></img>
 			</div>
 			<div className='logo-container' onClick={redirectToUserList}>

@@ -9,7 +9,7 @@
 	cursor: pointer;
 }
 
-.dashboard-header img {
+.user-header img {
 	display: block;
 	margin: 0 auto;
 	max-width: 100%;
@@ -40,9 +40,8 @@
 	cursor: pointer;
 }
 
-/* Optional: You can style the search icon further if needed */
 .search-icon svg {
-	fill: white; /* Change the color as needed */
+	fill: white;
 	width: 20px;
 	height: 20px;
 }
@@ -56,7 +55,7 @@
 
 .user-card {
 	font: normal normal bold 16px/21px Mulish;
-	width: 48%; /* Adjust the width as needed */
+	width: 48%;
 	margin-bottom: 20px;
 	padding: 10px;
 	color: white;
