@@ -8,9 +8,6 @@ const Login = () => {
 
 	const handleLogin = (e) => {
 		e.preventDefault();
-		// Perform login logic if needed
-
-		// Redirect to the dashboard page
 		navigate('/dashboard');
 	};
 

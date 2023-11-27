@@ -19,7 +19,7 @@
 	position: absolute;
 	top: 6%;
 	right: 47%;
-	background-color: rgb(1, 12, 1); /* Notification badge background color */
+	background-color: rgb(1, 12, 1);
 	color: green;
 	font-size: 14px;
 	padding: 5px 8px;
@@ -30,7 +30,7 @@
 }
 
 .user-role-value {
-	color: #36a546; /* Green color */
+	color: #36a546;
 }
 
 .search-bar {
@@ -128,7 +128,7 @@ p {
 		padding: 10px;
 	}
 	.notification-badge {
-		top: 6%; /* Adjust as needed */
-		right: 40%; /* Adjust as needed */
+		top: 6%;
+		right: 40%;
 	}
 }

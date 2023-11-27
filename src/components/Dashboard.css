@@ -45,7 +45,7 @@
 	position: absolute;
 	top: 6%;
 	right: 47%;
-	background-color: rgb(1, 12, 1); /* Notification badge background color */
+	background-color: rgb(1, 12, 1);
 	color: green;
 	font-size: 14px;
 	padding: 5px 8px;
@@ -141,7 +141,7 @@ h5 {
 		margin-top: 40px;
 	}
 	.noti-badge {
-		top: 7%; /* Adjust as needed */
+		top: 7%;
 		right: 34%;
 	}
 }

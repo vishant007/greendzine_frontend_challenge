@@ -11,7 +11,6 @@ const UserList = () => {
 	const userList = [
 		{ id: 1, name: 'John Doe', dob: '1990-05-15', role: 'Developer' },
 		{ id: 2, name: 'Jane Smith', dob: '1985-08-22', role: 'Designer' },
-		// Add more user data as needed
 	];
 
 	const [searchTerm, setSearchTerm] = useState('');
@@ -43,7 +42,6 @@ const UserList = () => {
 					onChange={(e) => setSearchTerm(e.target.value)}
 				/>
 				<div className='search-icon'>
-					{/* Optional: Replace this with your SVG icon */}
 					<svg
 						xmlns='http://www.w3.org/2000/svg'
 						viewBox='0 0 24 24'
