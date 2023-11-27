@@ -41,7 +41,16 @@
 	border-radius: 10px;
 	font: normal normal bold 18px/25px Source Sans Pro;
 }
-
+.noti-badge {
+	position: absolute;
+	top: 6%;
+	right: 47%;
+	background-color: rgb(1, 12, 1); /* Notification badge background color */
+	color: green;
+	font-size: 14px;
+	padding: 5px 8px;
+	border-radius: 50%;
+}
 .day {
 	display: flex;
 	justify-content: space-between;
@@ -130,6 +139,10 @@ h5 {
 	.dashboard {
 		width: 70%;
 		margin-top: 40px;
+	}
+	.noti-badge {
+		top: 7%; /* Adjust as needed */
+		right: 34%;
 	}
 }
 

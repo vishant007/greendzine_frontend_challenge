@@ -1,5 +1,4 @@
 .user-list-container {
-	min-height: 100vh;
 	overflow: hidden;
 }
 .logo-container {
@@ -129,15 +128,7 @@ p {
 		padding: 10px;
 	}
 	.notification-badge {
-		top: 7%; /* Adjust as needed */
-		right: 42%; /* Adjust as needed */
+		top: 6%; /* Adjust as needed */
+		right: 40%; /* Adjust as needed */
 	}
-}
-@media only screen and (max-width: 412px) {
-	.notification-badge {
-		top: 9%; /* Adjust as needed */
-		right: 34%;
-	}
-}
-@media only screen and (max-width: 390px) {
 }

@@ -7,6 +7,7 @@ import { FaHome, FaUsers } from 'react-icons/fa';
 
 const Dashboard = () => {
 	const navigate = useNavigate();
+	const notificationCount = 5;
 
 	const progressData = {
 		Monday: 4,
@@ -31,6 +32,7 @@ const Dashboard = () => {
 			</div>
 			<div className='dashboard-header'>
 				<img src={logo} alt='logo'></img>
+				<div className='noti-badge'>{notificationCount}</div>
 			</div>
 			<div className='dashboard'>
 				<h3>Employee Productivity Dashboard:</h3>
